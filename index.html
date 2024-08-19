@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('image2.jpg');
+            background-color: #f2f2f2;
+        }
+
+        .login-container {
+            width: 350px;
+            margin: 0 auto;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .Forget-container {
+            width: 350px;
+            margin: 0 auto;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h1 {
+            text-align: center;
+        }
+
+        .login-container h2 {
+            text-align: center;
+        }
+        .Forget-container h2 {
+            text-align: center;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .Forget-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #send-btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #Reset-btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #Forgot {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            text-align: right;
+            background: none;
+            color: #007BFF;
+            cursor: pointer;
+        }
+
+        #B-Login {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            text-align: right;
+            background: none;
+            color: #007BFF;
+            cursor: pointer;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <input type="text" id="email" placeholder="Enter email" /><br />
+        <h2 id="Message" style="font-size: 14px; color : red; display: none;">Invalid email</h2>
+        <input type="password" id="pass" placeholder="Enter Password" /><br />
+        <h2 id="Message2" style="font-size: 14px; color : red; display: none;">Invalid password</h2>
+        <button id="send-btn">Send</button>
+        <button id="Forgot"> Forget password?</button>
+    </div>
+    <div class="Forget-container">
+        <h1 style="text-align: center;">Forget password</h1>
+        <div style="position: relative; display: inline-block;">
+            <input type="password" id="old-pass" placeholder="Old Password" style="padding-right: 170px;" />
+            <input type="checkbox" id="show-password"
+                style="position: absolute; left: 160px; top: 30%; transform: translateY(-50%);" />
+        </div>
+        <div style="position: relative; display: inline-block;">
+            <input type="password" id="new-pass" placeholder="New Password" style="padding-right: 170px;" />
+            <input type="checkbox" id="show-password2"
+                style="position: absolute; left: 160px; top: 30%; transform: translateY(-50%);" />
+        </div>
+        <h2 id="Password_notmatch" style="color: red;font-size: 14px; display: none;">Password do not matched</h2>
+        <button id="Reset-btn">Reset Password</button>
+        <button id="B-Login"> Login</button>
+    </div>
+
+    <script src="/scripts.js"></script>
+</body>
+
+</html>
